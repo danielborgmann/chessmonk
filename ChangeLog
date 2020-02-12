@@ -1,0 +1,62 @@
+2006-10-12  Daniel Borgmann  <daniel.borgmann@gmail.com>
+
+	* Chessmonk/board_view.py: Improve performance
+
+2006-09-07  Daniel Borgmann <daniel.borgmann@gmail.com>
+
+	* Chessmonk/board_view.py: Rewrite to use Cairo, dropped GnomeCanvas dependency
+	
+	* Chessmonk/board.py: Use signals for widget communication
+	
+	* Chessmonk/pieces.py: Removed unused code, create Cairo surfaces
+	
+	* Chessmonk/notation.py, Chessmonk/PGN.py:
+	  Moved parse_string() and parse_move() to PGN.py
+	  
+	* Chessmonk/position.py: Added function get_FEN()
+	
+	* Chessmonk/ECO.py: New file
+	
+	* Chessmonk/application.py: New file
+
+2006-08-25  Nils R Grotnes <nils.grotnes@gmail.com>
+
+	* Chessmonk/PGN.py:
+	  o Improve loading of PGN files to use less memory.
+	  o Add "Result" as mandatory key to handle bad data better.
+
+2006-08-20  Nils R Grotnes <nils.grotnes@gmail.com>
+
+	* Chessmonk/notation.py:
+	  o Gracefully handle parsing errors.
+	  o Support long algebraic notation.
+
+2006-08-19  Daniel Borgmann <daniel.borgmann@gmail.com>
+
+	* Chessmonk/board_view.py: Add KeyError specification (Nils Grotnes).
+	
+	* chessmonk: Use exception handling for filename argument (Nils Grotnes).
+
+2006-08-18  Daniel Borgmann <daniel.borgmann@gmail.com>
+
+	* Chessmonk/mainwindow.py: Better basename parsing (Patch by Nils R Grotnes).
+	
+	* Chessmonk/board_view.py: Implement pixbuf cache.
+
+2006-08-12  Daniel Borgmann <daniel.borgmann@gmail.com>
+
+	* Chessmonk/notation.py, Chessmonk/notation_view.py:
+	  Support for annotations and basic NAG replacement.
+	  
+	* Chessmonk/notation_view.py:
+	  Add result string at end of notation.
+
+2006-08-10  Daniel Borgmann <daniel.borgmann@gmail.com>
+
+	* Chessmonk/notation_view.py: Fix error with empty variations.
+
+2006-08-03  Daniel Borgmann <daniel.borgmann@gmail.com>
+	
+	* Chessmonk/mainwindow.py: Add about dialog.
+	
+	* Chessmonk/utils.py: Add functions get_version() and get_license().
